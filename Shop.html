@@ -2,9 +2,25 @@
 <html>
 <head>
 <meta charset="utf-8"/>
-<title>Bylaws - The College Democrats Society at The Citadel</title>
+<title>Shop - The College Democrats Society at The Citadel</title>
 <link rel="icon" type="image/x-icon" href="Permanent Photos/Search Icon.png">
 <link rel="stylesheet" type="text/css" href="general.css" />
+<style>
+
+    .shopItems {background-color: #F0F5F8; padding: 1% 0%; width: 100%; display:flex; justify-content: center;}
+		.shopItems table {margin: 0; text-align: center; width: 70%;}
+        .shopItems td { padding: 1%;}
+		.shopItems h1 {font-family: Built_Titling_BD; margin: 0px; font-size: 1.75vw;}
+		.shopItems p {font-family: Built_Titling_BD; margin: 0px; font-size: 1.5vw;}
+
+        .shopItemsSub div {color: black; padding: 0px; text-align: center;}
+        .shopItemsSub h1 {font-family: Built_Titling_BD; font-size: 2vw; text-align: center; padding-bottom: 1%;}
+        .shopItemsSub p {font-family: Built_Titling_BD; font-size: 1.75vw; text-align: center; padding-bottom: 1%;}
+        
+        .shopItemsSub img {width: 100%; height: 100%; object-fit: cover; object-position: center 20%; }
+		.shopItemsSub100 {width: 15vw; height: 15vw; overflow: hidden; display: inline-block; border: 0.4vw solid black; box-shadow: 1px 1px 7px -1px rgb(50, 50, 50); }
+
+</style>
 </head>
 <body>
 
@@ -63,7 +79,7 @@
             <a href="Members.html">COMMUNITY⬇</a>
             <div class="dropDownContent">
                 <a href="Members.html">MEMBERS</a>
-                <a href="Bylaws.html" class="Active">BYLAWS</a>
+                <a href="Bylaws.html">BYLAWS</a>
                 <a href="Financials.html">FINANCIALS</a>
                 <a href="PartnerOrganizations.html">PARTNER ORGANIZATIONS</a>
                 <a href="https://www.instagram.com/bulldog_democrats/" target="_blank">FOLLOW US ON INSTAGRAM</a>
@@ -79,7 +95,7 @@
         <div class="dropDown">
             <a href="Resources.html">RESOURCES⬇</a>
             <div class="dropDownContent">
-                <a href="Shop.html">SHOP</a>
+                <a href="Shop.html" class="Active">SHOP</a>
                 <a href="Resources.html">FREE MATERIALS</a>
             </div>
         </div>
@@ -89,29 +105,42 @@
 <!-- MAIN CONTENT -->
 <article>
 
-    <!-- BYLAWS -->
-    <div class="genericPDF">
+    <!-- FREE BOOKS -->
+    <div class = "shopItems">
         </br>
         <table>
             <tr>
-                <td>
-                    <h1 style="font-size: 3vw;">The College Democrats at The Citadel</h1>
-                    <h1 style="font-size: 2vw;">Society Bylaws</h1>
+                <td colspan="1">
+                    <h1 style="font-size: 3vw;">Bulldog Democrat Shop</h1>
+                    <h1 style="font-size: 2vw;">Every dollar goes to supporting the Bulldog Democrats.</h1>
                 </td>
             </tr>
             <tr>
-                <td>
-                    <div class="pdfWrapper">
-                        <object class="pdfViewer" data="The Bylaws of The College Democrats Society at The Citadel.pdf" type="application/pdf">
-                            <p>Your browser does not support PDFs. <a href="The Bylaws of The College Democrats Society at The Citadel.pdf"></a>.</p>
-                        </object>
+                <td style="width: 25%; vertical-align: top;">
+                    <div style="width: 100%;" class="shopItemsSub">
+                        <div>
+                            <div class="shopItemsSub100">
+                                <img loading="lazy" src="Permanent Photos/Shop CDS Patch.png" alt="Shop Item - CDS Patch">
+                            </div>
+                            <h1>CDS Patch</h1>
+                            <p>$5.00</p>
+                        </div>
                     </div>
                 </td>
-                
+            </tr>
+            <tr>
+                <td colspan="1">
+                    <h1 style="font-size: 1.5vw; font-family: Times New Roman;">Want to buy a society patch?</h1>
+                    <h1 style="font-size: 1.5vw; font-family: Times New Roman;">Contact: <i>CitadelCollegeDemocrats@gmail.com</i></h1>
+                </td>
+            </tr>
         </table>
     </div>
 
-    
+
+ 
+
+
 
 </article>
 
@@ -167,15 +196,7 @@
 </body>
 
 
-<script src="jquery-3.7.1.min.js"></script>
-<script type="text/javascript">var submitted=false;</script>
-<script type="text/javascript">
-    $('#gform').on('submit', function(e) {
-    $('#gform *').fadeOut(1000);
-    $('#gform').prepend(
-     '<span class="infoSignUpThanks"><div>A Representative Will Be In Contact With You Shortley</div></span>'
-    );});
-</script>
+
 
 
 </html>

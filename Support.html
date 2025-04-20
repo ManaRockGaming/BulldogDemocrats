@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Support - The College Democrats Society at The Citadel</title>
+<link rel="icon" type="image/x-icon" href="Permanent Photos/Search Icon.png">
+<link rel="stylesheet" type="text/css" href="general.css" />
+<style>
+
+    .supportText {background-color: #F0F5F8; padding: 1% 0%; width: 100%; display:flex; justify-content: center;}
+		.supportText table {margin: 0; text-align: center; width: 70%;}
+        .supportText td { padding: 1%;}
+		.supportText h1 {font-family: Built_Titling_BD; margin: 0px; font-size: 1.75vw;}
+		.supportText p {font-family: Built_Titling_BD; margin: 0px; font-size: 1.5vw;}
+
+        .link a {font-size: 1.75vw; font-family: Times New Roman; text-decoration: none; color: black;}
+        .link a:hover {text-decoration: underline;}
+
+</style>
+</head>
+<body>
+
+<!-- WEBSITE TITLE -->
+<header>
+    <div class="websiteTitle">
+        <img src="Permanent Photos/CDS Patch.png" alt="Bulldog Democrats Logo">
+        <div>
+          <h1>The College Democrats Society At The Citadel</h1>
+          <h3>Lead By The United Independence caucus</h3>
+        </div>
+      </div>
+</header>
+
+<!-- TOP NAVIGATION -->
+<navigation>
+    <div class="topNavigation">
+        <div class="dropDown">
+            <a href="index.html">HOME</a>
+        </div>
+        <div class="dropDown">
+            <a href="Join.html">JOIN⬇</a>
+            <div class="dropDownContent">
+                <p>CADETS & STUDENTS⬆</p>
+                <p>ALUMNI & FACULTY⬆</p>
+                <a href="mailto:CitadelCollegeDemocrats@gmail.com" target="_blank">CONTACT US</a>
+            </div>
+        </div>
+        <div class="dropDown">
+            <a href="Support.html" class="Active">SUPPORT</a>
+            <div class="dropDownContent">
+                <p>VOLUNTEER⬆</p>
+                <p>MONETARILY⬆</p>
+                <p>AN INTERNSHIP⬆</p>
+                <p>AS A GUEST SPEAK⬆</p>
+            </div>
+        </div>
+        <div class="dropDown">
+            <a href="Newsletter.html">NEWSLETTER</a>
+            <div class="dropDownContent">
+                <p>READ⬆</p>
+                <p>WRITE⬆</p>
+                <p>MANAGE YOUR SUBSCRIPTION⬆</p>
+            </div>
+        </div>
+        <div class="dropDown">
+            <a href="Events.html">EVENTS⬇</a>
+            <div class="dropDownContent">
+                <p>EVENTS⬆</p>
+                <p>ALLIED EVENTS⬆</p>
+                <p>ANNUAL CONVENTION (COMING SOON)</p>
+                <p>FIRST FIVE YEAR PLAN (COMING SOON)</p>
+            </div>
+        </div>
+        <div class="dropDown">
+            <a href="Members.html">COMMUNITY⬇</a>
+            <div class="dropDownContent">
+                <a href="Members.html">MEMBERS</a>
+                <a href="Bylaws.html">BYLAWS</a>
+                <a href="Financials.html">FINANCIALS</a>
+                <a href="PartnerOrganizations.html">PARTNER ORGANIZATIONS</a>
+                <a href="https://www.instagram.com/bulldog_democrats/" target="_blank">FOLLOW US ON INSTAGRAM</a>
+                <p>CITADEL PRIDE SOCIETY</p>
+                <p>CITADEL COLLEGE SOCIALISTS</p>
+                <p>CHURCH OF THE REBEL JESUS</p>
+                <a href="UIC.html">THE UNITED INDEPENDENCE CAUCUS</a>
+            </div>
+        </div>
+        <div class="dropDown">
+            <a href="Education.html">EDUCATION</a>
+        </div>
+        <div class="dropDown">
+            <a href="Resources.html">RESOURCES⬇</a>
+            <div class="dropDownContent">
+                <a href="Shop.html">SHOP</a>
+                <a href="Resources.html">FREE MATERIALS</a>
+            </div>
+        </div>
+    </div>
+</navigation>
+
+<!-- MAIN CONTENT -->
+<article>
+
+
+    <!-- SUPPORT INTEREST SECTION-->  
+    <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdYnpOu-5W6L5-cV7oZ6Z_CfNrZjGqt4WmGhCKxuSanuVpbrg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">        
+        <div class="inputForm"> 
+            <table id="formContent">
+                <!-- Questions will be inserted here dynamically -->
+            </table>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) { nextForm(); }"></iframe>
+            <div id="navButtons">
+                <button type="button" class="inputFormButton" id="backBtn" onclick="prevForm()" style="display:none;">&lt;Back</button>
+                <button type="button" class="inputFormButton" id="nextBtn" onclick="nextForm()">Next&gt</button>
+                <input type="submit" class="inputFormButton" id="submitBtn" value="Submit" style="display:none;">
+            </div>
+            </br>
+            <!-- <span style="font-style: italic;"><a href="">Bulldog Democrat Privacy & Cybersecruity Policy</a></span> -->
+        </div>
+    </form>
+    
+    <script src="jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+        var submitted = false;
+        var currentSet = 0;
+        var loadedSets = [];
+
+        var questionSets = [
+            // First Set
+            `
+            <tr>
+                <td colspan="2" class="inputFormTitle300">
+                    Volunteer / Internship Support Interest Form
+                </td>
+            </tr>
+        
+            <tr>
+                <td>
+                    First Name <span style="color: red;">*</span><br>
+                    <input type="text" name="entry.86197401" maxlength="30" class="inputFormInput" placeholder="First Name">
+                </td>
+                <td>
+                    Last Name <span style="color: red;">*</span><br>
+                    <input type="text" name="entry.1277972577" maxlength="30" class="inputFormInput" placeholder="Last Name">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Organization's Name (If Applicable)<br>
+                    <input type="text" name="entry.1208471286" maxlength="30" class="inputFormInput" placeholder="Organization's Name (If Applicable)">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Your Email <span style="color: red;">*</span><br>
+                    <input type="text" name="entry.839297943" maxlength="30" class="inputFormInput" placeholder="Your Email">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Your Phone Number <span style="color: red;">*</span><br>
+                    <input type="text" name="entry.880280004" maxlength="30" class="inputFormInput" placeholder="Your Phone Number">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Support Interest Type <span style="color: red;">*</span><br>
+                    <select name="entry.390319153" class="inputFormInput">
+                        <option value="Volunteer">Volunteer</option>
+                        <option value="Support Financially">Support Financially**</option>
+                        <option value="Support An Internship">Support An Internship***</option>
+                        <option value="Guest Speaker">Guest Speak</option>
+                        <option value="Write A Newsletter Article">Write A Newsletter Article</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Why Are You Interested In Volunteering With The Bulldog Democrats? <span style="color: red;">*</span><br>
+                    <textarea name="entry.1745013661" id="whydoyouwanttojoin" class="inputFormInput" style="resize: vertical;" rows="3" placeholder="Type your response here..."></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Tell Use About Yourself? <span style="color: red;">*</span><br>
+                    <textarea name="entry.1958006266" id="anythingyouwouldlikeustoknow" class="inputFormInput" style="resize: vertical;" rows="3" placeholder="Type your response here..."></textarea>
+                </td>
+            </tr>
+            `,
+        ];
+
+        function updateForm() {
+            // Inject the set if not already added
+            if (!loadedSets.includes(currentSet)) {
+                const wrappedHtml = `<tbody class="formStep" id="formStep${currentSet}">${questionSets[currentSet]}</tbody>`;
+                $("#formContent").append(wrappedHtml);
+                loadedSets.push(currentSet);
+            }
+
+            // Hide all sets
+            $(".formStep").hide();
+
+            // Show current set
+            $(`#formStep${currentSet}`).show();
+
+            // Toggle nav buttons
+            $("#backBtn").toggle(currentSet > 0);
+            $("#nextBtn").toggle(currentSet < questionSets.length - 1);
+            $("#submitBtn").toggle(currentSet === questionSets.length - 1);
+        }
+
+        function nextForm() {
+            if (currentSet < questionSets.length - 1) {
+                currentSet++;
+                updateForm();
+            }
+        }
+
+        function prevForm() {
+            if (currentSet > 0) {
+                currentSet--;
+                updateForm();
+            }
+        }
+
+        $(document).ready(function () {
+            updateForm(); // Show first step
+        });
+    </script>
+   
+
+    <!-- SUPPORT FINANCIALLY -->
+    <div class = "supportText" style="background-color: #5B819A;" id="MonetarySupport">
+    </br>
+    <table>
+        <tr>
+            <td>
+                <h1 style="font-size: 3vw;">SUPPORT FINANCIALLY**</h1>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p style="font-size: 1.75vw; font-family: Times New Roman;">Monetary donations are used to spread democratic values at The Citadel, through funding CDS events and functions. By donating to the CDS, not only are you putting your money into a good cause, but directly investing in the future democratic leaders of America. For those unable to make a monetary donation, following us on social media goes a long way toward spreading democratic values.</p>
+                </br>
+                <p style="font-size: 1.75vw; font-family: Times New Roman;">Bulldog Democrats is organized as a 501(c)(4) nonprofit under the laws of South Carolina, with Articles of Incorporation filed accordingly as a DBA. Donations to the Bulldog Democrats cannot be deducted due to IRS Regulation 501(c)(4).</p>
+                </br>
+                <p style="font-size: 1.75vw; font-family: Times New Roman;" class="link">All Bulldog Democrats financials are available online on the <a href="Financials.html">"Financials"</a> Page</p>
+                </br>
+                <p style="font-size: 1.75vw; font-family: Times New Roman; font-weight: bold; text-decoration: underline;">Donate By Check</p>
+                <p style="font-size: 1.75vw; font-family: Times New Roman;"><span style ="font-weight: bold;">Paid To:</span> Bulldog Democrats</p>
+                <p style="font-size: 1.75vw; font-family: Times New Roman;"><span style ="font-weight: bold;">Mailed To:</span> PO Box Not Yet Set Up (Contact CitadelCollegeDemocrats@gmail.com)</p>
+                </br>
+                <p style="font-size: 1.75vw; font-family: Times New Roman; font-weight: bold; text-decoration: underline;">Donate By Venmo</p>
+                <p style="font-size: 1.75vw; font-family: Times New Roman;" class="link">
+                    <a href="https://account.venmo.com/u/BulldogDemocrats" target="_blank">
+                        Bulldog Democrats🔗
+                    </a>
+                </p>
+            </td>
+        </tr>
+    </table>
+    </div>
+
+    <!-- MAJOR MONETARY CONTRIBUTORS -->
+    <div class="portraits" style="background-color: #194867; color: white;">
+        </br>
+        <table>
+            <tr>
+                <td colspan="3">
+                    <p class="p300vw">MAJOR MONETARY CONTRIBUTORS</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://www.scstatehouse.gov/member.php?code=1782954332" target="_blank">
+                        <div class="portraits100W">
+                            <img src="Member Photos/Ed Sutton Photo.jpg" alt="Photo of SC Senator Ed Sutton">
+                        </div>
+                        <p class="p200vw" style="color: white;">Ed Sutton</p>
+                        <p class="p175vw" style="color: white;">SC State Senator - District 20</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://www.scstatehouse.gov/member.php?code=1433096420" target="_blank">
+                        <div class="portraits100W">
+                            <img src="Member Photos/Russell Ott Photo.jpg" alt="Photo of SC Senator Russell Ott">
+                        </div>
+                        <p class="p200vw" style="color: white;">Russell Ott</p>
+                        <p class="p175vw" style="color: white;">SC State Senator - District 26</p>
+                    </a>
+                </td>
+                <td>
+                    <!--<a href="">-->
+                        <div class="portraits100W">
+                            <img src="Member Photos/Taylor Skardon Photo.jpg" alt="Photo of Taylor Skardon">
+                        </div>
+                        <p class="p200vw" style="color: white;">Taylor Skardon</p>
+                        <p class="p175vw" style="color: white;">Society Faculty Advisor</p>
+                    <!--</a>-->
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- INTERNSHIP SUPPORT -->
+    <div class = "supportText" style="background-color: #5B819A; padding: 1% 0% 0% 0%;" id="Internships">
+    </br>
+    <table>
+        <tr>
+            <td>
+                <h1 style="font-size: 3vw;">INTERNSHIP SUPPORT***</h1>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p style="font-size: 1.75vw; font-family: Times New Roman;" class="link">One goal of the Bulldog Democrats is to connect Citadel students with political organizers and politicians.The Bulldog Democrats collaborates with the <a href="https://www.citadel.edu/career/">Citadel Career Center</a> to build these connections. If interested in sponosoring an internship please complete the interest form above.</p>
+            </td>
+        </tr>
+
+    </table>
+    </div>
+
+    <!-- CURRENT INTERSHIPS -->
+    <div class="portraits" style="background-color: #5B819A; padding: 0% 0% 1% 0%;">
+        </br>
+        <table>
+            <tr>
+                <td colspan="1">
+                    <p class="p250vw">CURRENT INTERNSHIP OPPORTUNITIES</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!--<a href="">-->
+                        <div class="portraits100">
+                            <img src="Member Photos/Vacant Photo.avif" alt="Coming Soon Photo">
+                        </div>
+                        <p class="p150vw">Coming Soon</p>
+                        <p class="p100vw">Contact: CitadelCollegeDemocrats@gmail.com</p>
+                    <!--</a>-->
+                </td> 
+            </tr>
+        </table>
+    </div>
+
+    <!-- PREVIOUS GUEST SPEAKERS -->
+    <div class="portraits" style="background-color: white;" id="GuestSpeakers">
+        </br>
+        <table>
+            <tr>
+                <td colspan="3">
+                    <p class="p300vw">PREVIOUS CDS GUEST SPEAKERS</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://www.instagram.com/samskardon/" target="_blank">
+                        <div class="portraits100">
+                            <img src="Member Photos/Photo Sam Skardon.png" alt="Photo of Sam Skardon">
+                        </div>
+                        <p class="p200vw">Sam Skardon</p>
+                        <p class="p175vw">Charleston County Democratic Chair</p>
+                        <p class="p150vw">SY24-25</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://www.instagram.com/claynmiddleton/" target="_blank">
+                        <div class="portraits100">
+                            <img src="Member Photos/Photo Clay Middleton.jpg" alt="Photo of Clay Middleton">
+                        </div>
+                        <p class="p200vw">Clay Middleton</p>
+                        <p class="p175vw">Former Staffer</p>
+                        <p class="p150vw">SY24-25</p>
+                    </a>
+                </td> 
+                <td>
+                    <!--<a href="">-->
+                        <div class="portraits100">
+                            <img src="Member Photos/Vacant Photo.avif" alt="Coming Soon Photo">
+                        </div>
+                        <p class="p200vw">Coming Soon</p>
+                        <p class="p175vw">Coming Soon</p>
+                        <p class="p150vw">Coming Soon</p>
+                    <!--</a>-->
+                </td> 
+            </tr>
+        </table>
+    </div>
+
+</article>
+
+
+
+
+
+<!-- FOOTER -->
+<footer>
+    <div class="bottomFooter">
+        <table style="vertical-align: bottom;">
+            <tr>
+                <td style="width: 70%;">
+                    <h3>
+                        <img src="Permanent Photos/CDS Patch.png" alt="Democrats Icon" style="height: 50px; vertical-align: middle; margin-right: 8px;">
+                        The College Democrats Society at The Citadel
+                    </h3>
+                    <p>Interested in meeting with fellow cadets/students/alumni with a similar viewpoint, or to hear a new perspective? Want to meet and build connections with local elected officials and policymakers? Want to make a positive difference? All are invited to participate and join The College Democrats Society at The Citadel, a chance to build a new Carolina.</p>
+
+                    <p><a href="index.html">Home</a>
+                        |
+                        <a href="Join.html">Join</a>
+                        |
+                        <a href="Support.html">Support</a>
+                        |
+                        <a href="Newsletter.html">Newsletter</a>
+                        |
+                        <a href="Members.html">Community</a>
+                        |
+                        <a href="mailto:citadelcollegedemocrats@gmail.com" target="_blank">CitadelCollegeDemocrats@gmail.com</a>
+                    </p>
+                    <p>
+                        <i>The College Democrats Society at The Citadel - Reformed SY24/25. Bulldog Democrats is organized as a 501(c)(4) nonprofit under the laws of South Carolina, with Articles of Incorporation filed accordingly as a DBA for the United Independence Coalition.</i>
+                    </p>
+                    
+                    <p>
+                        <i>Any views expressed by The College Democrats Society at The Citadel / Bulldog Democrats / United Independence Coalition or its leaders/members does not represent the views of The Citadel, the Corps of Cadets, the US Military, or the SC Military.</i>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 100%; vertical-align: center;">
+                    <a href="https://www.instagram.com/bulldog_democrats/" target="_blank"><img src="Permanent Photos/Icon_Instagram.png" onmouseover="this.src='Permanent Photos/Icon_Instagram_Hover.png';" onmouseout="this.src='Permanent Photos/Icon_Instagram.png';" width="5%" alt="Button to The Citadel College Democrats' Instagram"></a>               
+                    <a href="mailto:citadelcollegedemocrats@gmail.com" target="_blank"><img src="Permanent Photos/Icon_Gmail.png" onmouseover="this.src='Permanent Photos/Icon_Gmail_Hover.png';" onmouseout="this.src='Permanent Photos/Icon_Gmail.png';" width="5%" alt="Button to The Citadel College Democrats' Gmail"></a>
+                    <a href="https://account.venmo.com/u/BulldogDemocrats" target="_blank"><img src="Permanent Photos/Icon_Venmo.png" onmouseover="this.src='Permanent Photos/Icon_Venmo_Hover.png';" onmouseout="this.src='Permanent Photos/Icon_Venmo.png';" width="5%" alt="Button to The Citadel College Democrats' Venmo"></a>
+                </td>
+            </tr>
+        </table>
+        </br>   
+    </div>
+</footer>
+
+</body>
+
+
+<script src="jquery-3.7.1.min.js"></script>
+<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+    $('#gform').on('submit', function(e) {
+    $('#gform *').fadeOut(1000);
+    $('#gform').prepend(
+     '<span class="inputFormThanks"><div>Thank You For Your Interest In Volunteering, A Representative Will Be In Contact Shortly.</div></span>'
+    );});
+</script>
+
+
+</html>

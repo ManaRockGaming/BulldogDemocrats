@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Finances - The College Democrats Society at The Citadel</title>
+<link rel="icon" type="image/x-icon" href="Permanent Photos/Search Icon.png">
+<link rel="stylesheet" type="text/css" href="general.css" />
+<style>
+
+    .finances {background-color: #F0F5F8; padding: 1% 0%; width: 100%; display:flex; justify-content: center;}
+		.finances table {margin: 0; text-align: center; width: 80%;  table-layout: fixed;}
+		.finances td { width: 33.3%; padding: 1%;}
+		.finances h1 {font-family: Built_Titling_BD; margin: 0px; font-size: 1.75vw;}
+		.finances p {font-family: Built_Titling_BD; margin: 0.75vw; font-size: 1.5vw;}
+        .finances .p1 { font-family: Times New Roman; font-size: 1.5vw; text-align: left;}
+        .finances a {color: black;}
+
+        .stockTable {border: 0.4vw solid black; background-color: #F0F5F8;}
+		
+        .iframeWrapper {width: 100%; height: 600px; overflow: auto; border: 1px solid #ccc; box-shadow: 0 0 8px rgba(0,0,0,0.1); border-radius: 8px; position: relative; }
+        .iframeViewer {width: 100%; height: 100%; border: none; transform-origin: top left; transition: transform 0.2s ease; }
+
+</style>
+</head>
+<body>
+
+<!-- WEBSITE TITLE -->
+<header>
+    <div class="websiteTitle">
+        <img src="Permanent Photos/CDS Patch.png" alt="Bulldog Democrats Logo">
+        <div>
+          <h1>The College Democrats Society At The Citadel</h1>
+          <h3>Lead By The United Independence caucus</h3>
+        </div>
+      </div>
+</header>
+
+<!-- TOP NAVIGATION -->
+<navigation>
+    <div class="topNavigation">
+        <div class="dropDown">
+            <a href="index.html">HOME</a>
+        </div>
+        <div class="dropDown">
+            <a href="Join.html">JOIN⬇</a>
+            <div class="dropDownContent">
+                <p>CADETS & STUDENTS⬆</p>
+                <p>ALUMNI & FACULTY⬆</p>
+                <a href="mailto:CitadelCollegeDemocrats@gmail.com" target="_blank">CONTACT US</a>
+            </div>
+        </div>
+        <div class="dropDown">
+            <a href="Support.html">SUPPORT</a>
+            <div class="dropDownContent">
+                <p>VOLUNTEER⬆</p>
+                <p>MONETARILY⬆</p>
+                <p>AN INTERNSHIP⬆</p>
+                <p>AS A GUEST SPEAK⬆</p>
+            </div>
+        </div>
+        <div class="dropDown">
+            <a href="Newsletter.html">NEWSLETTER</a>
+            <div class="dropDownContent">
+                <p>READ⬆</p>
+                <p>WRITE⬆</p>
+                <p>MANAGE YOUR SUBSCRIPTION⬆</p>
+            </div>
+        </div>
+        <div class="dropDown">
+            <a href="Events.html">EVENTS⬇</a>
+            <div class="dropDownContent">
+                <p>EVENTS⬆</p>
+                <p>ALLIED EVENTS⬆</p>
+                <p>ANNUAL CONVENTION (COMING SOON)</p>
+                <p>FIRST FIVE YEAR PLAN (COMING SOON)</p>
+            </div>
+        </div>
+        <div class="dropDown">
+            <a href="Members.html">COMMUNITY⬇</a>
+            <div class="dropDownContent">
+                <a href="Members.html">MEMBERS</a>
+                <a href="Bylaws.html">BYLAWS</a>
+                <a href="Financials.html" class="Active">FINANCIALS</a>
+                <a href="PartnerOrganizations.html">PARTNER ORGANIZATIONS</a>
+                <a href="https://www.instagram.com/bulldog_democrats/" target="_blank">FOLLOW US ON INSTAGRAM</a>
+                <p>CITADEL PRIDE SOCIETY</p>
+                <p>CITADEL COLLEGE SOCIALISTS</p>
+                <p>CHURCH OF THE REBEL JESUS</p>
+                <a href="UIC.html">THE UNITED INDEPENDENCE CAUCUS</a>
+            </div>
+        </div>
+        <div class="dropDown">
+            <a href="Education.html">EDUCATION</a>
+        </div>
+        <div class="dropDown">
+            <a href="Resources.html">RESOURCES⬇</a>
+            <div class="dropDownContent">
+                <a href="Shop.html">SHOP</a>
+                <a href="Resources.html">FREE MATERIALS</a>
+            </div>
+        </div>
+    </div>
+</navigation>
+
+<!-- MAIN CONTENT -->
+<article>
+
+    <!--https://www.tradingview.com/widget-docs/widgets/charts/symbol-overview/-->
+
+    <!-- FINANCIALS - GENERAL LEDGER -->
+    <div class="finances">
+        <table>
+            <tr>
+                <td>
+                    <h1 style="font-size: 3vw;">Financials - General Ledger</h1>
+                    <p class="p1">We believe that one of the most important values in politics is transparency. That's why we openly share our financial records and investment choices on this website. The Bulldog Democrats should lead by example, being honest and open about where your money goes, how it's managed, and what it supports.</p>
+                    <p class="p1">Revenue from investments plays a crucial role alongside donations in helping to smooth funding availability for events and outreach.  Honor, Duty, and Respect. All of our investments are made with consideration of Environmental, Social, and Governance (ESG) in mind. This ensures that we're not only making smart financial choices, but also aligning our finances with our values. Supporting companies that demonstrate responsibility for our planet, fair labor practices, ethical leadership, and good governance.</p>
+                
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="margin-bottom: 10px;">
+                        <button onclick="zoomIn()">Zoom In</button>
+                        <button onclick="zoomOut()">Zoom Out</button>
+                        <button onclick="resetZoom()">Reset</button>
+                    </div>
+                    <div class="iframeWrapper" id="iframeWrapper">
+                        <iframe class="iframeViewer" id="zoomIframe" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTpokYR0yOhCCDl_VnV4yxekQtOOhM5isJj1cv67hNn6UtVWG8rN7dXQK_PxNs5COl4slV1MkupJwlQ/pubhtml?widget=true&amp;headers=false" allowfullscreen></iframe>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- FINANCIALS - INVESTMENTS -->
+    <div class="finances"  style="background-color: #5B819A; padding-top: 2%;">
+        </br>
+        <table class="stockTable">
+            <tr>
+                <td colspan="4">
+                    <h1 style="font-size: 3vw;">Financials - Investments</h1>
+                    <p style="color: red;"><i>CURRENTLY THE BULLDOG DEMOCRATS HAVE NO INVESTMENTS</i></p>
+                </td>
+            </tr>
+            <tr>
+                <td>   
+                    <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                            {
+                                "symbol": "FOREXCOM:DJI", 
+                                "width": "100%", "isTransparent": false, "colorTheme": "light", "locale": "en"
+                            }
+                            </script>
+                        </div>
+                    <!-- TradingView Widget END -->
+                </td>
+                <td>
+                    <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                            {
+                                "symbol": "FOREXCOM:SPXUSD",
+                                "width": "100%", "isTransparent": false, "colorTheme": "light", "locale": "en"
+                            }
+                            </script>
+                        </div>
+                    <!-- TradingView Widget END -->
+                </td>
+                <td>
+                    <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                            {
+                                "symbol": "FX:EURUSD",
+                                "width": "100%", "isTransparent": false, "colorTheme": "light", "locale": "en"
+                            }
+                            </script>
+                        </div>
+                    <!-- TradingView Widget END -->
+                </td>
+                <td>
+                    <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+                            {
+                                "symbol": "FX_IDC:CNYUSD",
+                                "width": "100%", "isTransparent": false, "colorTheme": "light", "locale": "en"
+                            }
+                            </script>
+                        </div>
+                    <!-- TradingView Widget END -->
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    <!-- STOCK ONE -->
+    <div class="finances"  style="background-color: #5B819A">
+        <table class="stockTable">
+            <tr>
+                <td colspan="2" style="padding: 1% 0% 0% 0%;">
+                    <h1 style="font-size: 2.5vw;">Vanguard S&P 500 ETF</h1>
+                    <p style="font-size: 1.5vw; margin: 0.75vw 0vw 0vw 0vw;"><a href="">VIEW: ESG SCORE</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td style="height: 60vh;">
+                   <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+                                {
+                                    "symbols": [
+                                        [
+                                        "AMEX:VOO|1M"
+                                        ]
+                                    ],
+                                    "chartOnly": false, "width": "100%", "height": "100%", "locale": "en", "colorTheme": "light", "autosize": true, "showVolume": false, "showMA": false, "hideDateRanges": false, "hideMarketStatus": false,
+                                    "hideSymbolLogo": false, "scalePosition": "right", "scaleMode": "Normal", "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif", "fontSize": "10", "noTimeScale": false,
+                                    "valuesTracking": "1", "changeMode": "price-and-percent", "chartType": "area", "maLineColor": "#2962FF", "maLineWidth": 1, "maLength": 9, "headerFontSize": "medium", "lineWidth": 2, "lineType": 0,
+                                    "dateRanges": [ "1m|30", "3m|60", "12m|1D", "60m|1W", "all|1M" ]
+                                }
+                            </script>
+                        </div>
+                    <!-- TradingView Widget END -->
+                </td>
+                <td style="height: 60vh;">
+                    <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-profile.js" async>
+                                {
+                                    "width": "100%", "height": "100%",  "isTransparent": false, "colorTheme": "light", "symbol": "AMEX:VOO", "locale": "en"
+                                }
+                            </script>
+                        </div>
+                    <!-- TradingView Widget END -->
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- STOCK TWO -->
+    <div class="finances"  style="background-color: #5B819A">
+        </br>
+        <table class="stockTable">
+            <tr>
+                <td colspan="2" style="padding: 1% 0% 0% 0%;">
+                    <h1 style="font-size: 2.5vw;">Vanguard S&P 500 ETF</h1>
+                    <p style="font-size: 1.5vw; margin: 0.75vw 0vw 0vw 0vw;"><a href="">VIEW: ESG SCORE</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td style="height: 60vh;">
+                   <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-overview.js" async>
+                                {
+                                    "symbols": [
+                                        [
+                                        "AMEX:VOO|1M"
+                                        ]
+                                    ],
+                                    "chartOnly": false, "width": "100%", "height": "100%", "locale": "en", "colorTheme": "light", "autosize": true, "showVolume": false, "showMA": false, "hideDateRanges": false, "hideMarketStatus": false,
+                                    "hideSymbolLogo": false, "scalePosition": "right", "scaleMode": "Normal", "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif", "fontSize": "10", "noTimeScale": false,
+                                    "valuesTracking": "1", "changeMode": "price-and-percent", "chartType": "area", "maLineColor": "#2962FF", "maLineWidth": 1, "maLength": 9, "headerFontSize": "medium", "lineWidth": 2, "lineType": 0,
+                                    "dateRanges": [ "1m|30", "3m|60", "12m|1D", "60m|1W", "all|1M" ]
+                                }
+                            </script>
+                        </div>
+                    <!-- TradingView Widget END -->
+                </td>
+                <td style="height: 60vh;">
+                    <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-profile.js" async>
+                                {
+                                    "width": "100%", "height": "100%",  "isTransparent": false, "colorTheme": "light", "symbol": "AMEX:VOO", "locale": "en"
+                                }
+                            </script>
+                        </div>
+                    <!-- TradingView Widget END -->
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div class="finances"  style="background-color: #5B819A">
+        </br>
+        <table class="stockTable">
+            <tr>
+                <td colspan="4">
+                    <p>501( C )( 4 ) Nonprofit Financials Managed By: Chairman Conor Rom</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+</article>
+
+
+
+
+
+<!-- FOOTER -->
+<footer>
+    <div class="bottomFooter">
+        <table style="vertical-align: bottom;">
+            <tr>
+                <td style="width: 70%;">
+                    <h3>
+                        <img src="Permanent Photos/CDS Patch.png" alt="Democrats Icon" style="height: 50px; vertical-align: middle; margin-right: 8px;">
+                        The College Democrats Society at The Citadel
+                    </h3>
+                    <p>Interested in meeting with fellow cadets/students/alumni with a similar viewpoint, or to hear a new perspective? Want to meet and build connections with local elected officials and policymakers? Want to make a positive difference? All are invited to participate and join The College Democrats Society at The Citadel, a chance to build a new Carolina.</p>
+
+                    <p><a href="index.html">Home</a>
+                        |
+                        <a href="Join.html">Join</a>
+                        |
+                        <a href="Support.html">Support</a>
+                        |
+                        <a href="Newsletter.html">Newsletter</a>
+                        |
+                        <a href="Members.html">Community</a>
+                        |
+                        <a href="mailto:citadelcollegedemocrats@gmail.com" target="_blank">CitadelCollegeDemocrats@gmail.com</a>
+                    </p>
+                    <p>
+                        <i>The College Democrats Society at The Citadel - Reformed SY24/25. Bulldog Democrats is organized as a 501(c)(4) nonprofit under the laws of South Carolina, with Articles of Incorporation filed accordingly as a DBA for the United Independence Coalition.</i>
+                    </p>
+                    
+                    <p>
+                        <i>Any views expressed by The College Democrats Society at The Citadel / Bulldog Democrats / United Independence Coalition or its leaders/members does not represent the views of The Citadel, the Corps of Cadets, the US Military, or the SC Military.</i>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 100%; vertical-align: center;">
+                    <a href="https://www.instagram.com/bulldog_democrats/" target="_blank"><img src="Permanent Photos/Icon_Instagram.png" onmouseover="this.src='Permanent Photos/Icon_Instagram_Hover.png';" onmouseout="this.src='Permanent Photos/Icon_Instagram.png';" width="5%" alt="Button to The Citadel College Democrats' Instagram"></a>               
+                    <a href="mailto:citadelcollegedemocrats@gmail.com" target="_blank"><img src="Permanent Photos/Icon_Gmail.png" onmouseover="this.src='Permanent Photos/Icon_Gmail_Hover.png';" onmouseout="this.src='Permanent Photos/Icon_Gmail.png';" width="5%" alt="Button to The Citadel College Democrats' Gmail"></a>
+                    <a href="https://account.venmo.com/u/BulldogDemocrats" target="_blank"><img src="Permanent Photos/Icon_Venmo.png" onmouseover="this.src='Permanent Photos/Icon_Venmo_Hover.png';" onmouseout="this.src='Permanent Photos/Icon_Venmo.png';" width="5%" alt="Button to The Citadel College Democrats' Venmo"></a>
+                </td>
+            </tr>
+        </table>
+        </br>   
+    </div>
+</footer>
+
+</body>
+
+
+<script src="jquery-3.7.1.min.js"></script>
+<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+    $('#gform').on('submit', function(e) {
+    $('#gform *').fadeOut(1000);
+    $('#gform').prepend(
+     '<span class="infoSignUpThanks"><div>A Representative Will Be In Contact With You Shortley</div></span>'
+    );});
+</script>
+<script>
+    let scale = 1;
+    
+    function zoomIn() {
+        scale += 0.1;
+        applyZoom();
+    }
+    
+    function zoomOut() {
+        scale = Math.max(0.1, scale - 0.1); // Prevents it from going to 0
+        applyZoom();
+    }
+    
+    function resetZoom() {
+        scale = 1;
+        applyZoom();
+    }
+    
+    function applyZoom() {
+        const iframe = document.getElementById("zoomIframe");
+        iframe.style.transform = `scale(${scale})`;
+        iframe.style.width = `${100 / scale}%`;
+        iframe.style.height = `${100 / scale}%`;
+    }
+</script>
+
+
+</html>
